@@ -1,0 +1,118 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+$font-url--google        : 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+$font-family--primary    : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font Weights
+
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;
+
+
+// Descriptive Base Colors
+$white : #fff;
+$black : #0b0b0b;
+$grey  : #797e83;
+
+$malibu        :  #51DEFC;
+$emerald       :  #64CB82;
+$sunglo        :  #E4757B;
+$bittersweet   :  #FD7857;
+$prplmountain  :  #927BC1;
+$riptide       :  #80E8D1;
+$pelorous      :  #3EABCA;
+$anakiwa       :  #80E6FC;
+$moonraker     :  #DEB2EF;
+$vistablue     :  #88D99F;
+$seapink       :  #EB9FA3;
+$vividtangerine:  #FE9F83;
+$anakiwa2      :  #7EE7FD;
+
+
+// Color Usage
+
+$color-primary   : $riptide;
+$color-secondary : #880000;
+$color-accent    : #ececec;
+$color-shadow    : #cecece;
+
+
+// Color Palette Modifiers
+
+$color-palettes: (
+	grey: (
+		xx-light : lighten($grey, 43%),
+		x-light  : lighten($grey, 35%),
+	  light    : lighten($grey, 12%),
+	  base     : $grey,
+	 	dark     : darken($grey, 8%),
+	 	x-dark   : darken($grey, 16%)
+	),
+	black: (
+		light    : lighten($black, 10%),
+		base     : $black,
+		dark     : darken($black, 10%)
+	),
+	riptide: (
+		light    : lighten($riptide, 10%),
+		base     : $riptide,
+		dark     : darken($riptide, 10%)
+	)
+);
+
+// UI Colors
+$ui-colors: (
+	default : $malibu,
+	success : $emerald,
+	error   : $sunglo,
+	warning : $bittersweet,
+	info    : $prplmountain
+);
+
+// Grid colors
+$grid-colors: (
+	--2  : $malibu,
+	--3  : $moonraker ,
+	--4  : $anakiwa2,
+	--5  : $emerald,
+	--6  : $pelorous,
+	--7  : $seapink,
+	--8  : $bittersweet,
+	--9  : $anakiwa,
+	--10 : $moonraker,
+	--11 : $vistablue,
+	--12 : $riptide
+);
+
+// Text
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space    : 1px;
+
+// Border radius
+$br--default    : .4em;
+$br--round      : 50%;
+
+// Transitions
+$trns-duration  : .3s;
+
+// Path to Assets
+$path--rel      : "../img";
+
+// Grid
+$g-col-width    : 65px;
+$g-gutter-width : 20px;
+$g-col-count    : 12;
+$g-cont-max-w   : 1440px;
+
+// Breakpoints
+$brkpoint-sm    : 1px;
+$brkpoint-md    : 480px;
+$brkpoint-lg    : 1440px;

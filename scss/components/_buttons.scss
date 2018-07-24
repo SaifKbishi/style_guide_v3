@@ -1,0 +1,62 @@
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
+.btn {
+	@include bg-colors($ui-colors);
+}
+
+[class^="btn--"] {
+  @extend %center-align;
+  @extend %btn;
+  margin-bottom: em(20px, 14px);
+  width:100%;
+  @include mq(medium) {
+    width: auto;
+    display: inline-block;
+    @include doubly(20px);
+  }
+}
+
+.grid__col {
+	@include grid-colors($grid-colors);
+}
+
+[class^="grid__col--"].theme__colors {
+  @extend %grid;
+  margin-bottom: em(12px, 20px);
+  width:100%;
+  @include mq(medium) {
+    width: auto;
+    display: inline-block;
+    @include doubly(20px);
+  }
+}
+
+.grid__row,
+.theme__colors,
+.grid__col--12,
+.grid__col--12 [class^="btn--"]{
+  @include mq(medium) {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+  }
+}
+
+.grid__col--4 .btn--default.theme__colors{
+  width: 100%;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+///sd

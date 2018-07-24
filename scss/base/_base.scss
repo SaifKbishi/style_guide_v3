@@ -1,0 +1,106 @@
+
+/*just for testing*/
+
+body{
+  @include mq(small) {    background-color: #e67478;  } //#9279c3
+  @include mq(medium){    background-color: #FFF;  }
+  @include mq(large) {    background-color: #5ece7f;  }
+}
+
+* {
+  box-sizing: border-box;
+  color: #797e83;
+}
+
+a {
+  color: $malibu;
+  text-decoration: none;
+  font-weight: $font-weight--bold;
+}
+
+blockquote {
+	//@media (min-width: 769px) {
+		margin: em(32px, 24px);// em(32px, 24px);
+		padding: 0 0 0 5%;
+		//border-left: em(8px, 24px) solid palette(grey, xx-light);
+		//font-size: em(24px);
+	//}
+  border-left: em(8px, 24px) solid palette(riptide, base);
+  border-radius: $br--default;
+	font-weight: $font-weight--light;
+	font-style : italic;
+	font-size : em(20px);
+}
+
+.link{
+  align-self: center;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+// .grid__col--3,
+// .nav{
+//   display: flex;
+//   flex-direction: column;
+// }
+//
+// .img--logo{
+//   width: 110px;
+//   align-self: center;
+// }
+//
+// .nav a{
+//   display: block;
+//   text-align: center;
+//   padding: .4em;
+// }
+//
+// ul,
+// li {
+//   margin: 0;
+//   padding: 0;
+//   list-style-type: none;
+// }
+
+// Images
+
+img {
+  margin-bottom: em(24px);
+  max-width: 100%;
+  height: auto;
+}
+
+// Form elements
+
+input,
+textarea {
+	display: block;
+	padding: 15px;
+	width: 100%;
+	outline: 0;
+	border: 0;
+}
+
+.nav a:hover {
+    color: #FFF;
+    background-color:#880000; // #80E8D1;
+}
+
+.grid__row{
+  padding-top: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+//end

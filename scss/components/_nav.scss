@@ -1,0 +1,78 @@
+// ==========================================================================
+// Nav
+// ==========================================================================
+
+
+[class^="grid__row"]:first-of-type,
+.nav{
+  display: flex;
+  flex-direction: column;
+/*    @include mq(medium) {
+      justify-content: flex-end;
+      height: 200px;
+    }*/
+    @include mq(large) {
+         flex-direction: row;
+       }
+}
+
+.grid__col--3{
+  align-self: center;
+  width: 110px;
+   @include mq(medium) {
+     width: 140px;
+   }
+   @include mq(large) {
+        margin-right: auto;
+      }
+}
+/*
+.grid__col--9{
+  @include mq(medium) {
+    width: 100%;
+  }
+}*/
+
+.nav a{
+  display: block;
+  text-align: center;
+  padding: .4em;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav {
+	margin-top: em(20px);
+	margin-bottom: em(30px);
+  @include mq(medium) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  @include mq(large) {
+    justify-content: flex-end;
+  }
+}
+
+.nav__item {
+	@extend %nav-item-horz;
+	a {
+		@extend %nav-item-link;
+		color: palette(grey);
+		&:hover {
+			@extend %nav-item-on;
+		}
+	}
+}
+
+.nav__item--current {
+	@extend %nav-item-horz;
+	a {
+		@extend %nav-item-link;
+		@extend %nav-item-on;
+	}
+}
