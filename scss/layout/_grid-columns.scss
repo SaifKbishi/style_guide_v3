@@ -31,3 +31,14 @@
     }
   }
 }
+
+.grid__col--7.theme__colors{
+    @include mq(medium) {
+      flex: 2;
+    }
+}
+.grid__col--8.theme__colors{
+  @include mq(medium) {
+    flex: 3;
+  }
+}

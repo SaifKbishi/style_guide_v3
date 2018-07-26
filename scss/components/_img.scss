@@ -6,6 +6,7 @@
   @include m(frame) {
     border: 1px solid palette(grey, x-light);
     padding: em(12px);
+    width: 100%; 
   }
   @include m(avatar) {
     display: block;

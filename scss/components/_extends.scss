@@ -50,6 +50,9 @@
 // Buttons
 %btn {
   padding: 15px 30px;
+  @include mq(medium){
+    padding: 15px 5%;
+  }
   border: 0;
   border-radius : $br--default;
   color: $white;

@@ -15,18 +15,12 @@
 }
 
 // Media queries
-
 @mixin mq($break) {
   @if $break == "large" {
     @media (min-width: $brkpoint-lg){
       @content;
     }
   }
-  // @else if $break == "large" {
-  //   @media (min-width: $brkpoint-lg) {
-  //     @content;
-  //   }
-  // }
   @else if $break == "medium" {
     @media (min-width: $brkpoint-md + 1) {
       @content;
@@ -37,13 +31,9 @@
       @content;
     }
   }
-  //  @else {
-  //  	@content;
-  // }
 }
 
 // Generate modifier color classes
-
 @mixin bg-colors($map) {
 	@each $theme, $color in $map {
 		&--#{$theme} {
@@ -62,7 +52,6 @@
 }
 
 // Image replacement
-
 @mixin img-replace($img, $w, $h, $disp: block) {
 	background-image: url('#{$path--rel}/#{$img}');
 	background-repeat: no-repeat;
@@ -72,7 +61,6 @@
 }
 
 // Adjacent sibling margins
-
 @mixin doubly($margin: 1em) {
 	& + & {
 	  margin-left: $margin;
@@ -82,7 +70,6 @@
 
 
 // Grid Columns
-
 @mixin g-columns {
   @for $i from 1 through $g-col-count {
     $context: g-context($g-col-width, $g-col-count ,$g-gutter-width) !global;

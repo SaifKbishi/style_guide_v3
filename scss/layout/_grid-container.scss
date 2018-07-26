@@ -17,3 +17,47 @@
     max-width: $g-cont-max-w;
   }
 }
+
+
+.grid__col {
+	@include grid-colors($grid-colors);
+}
+
+[class^="grid__col--"].theme__colors {
+  @extend %grid;
+  margin-bottom: em(12px, 20px);
+  width:100%;
+  @include mq(medium) {
+    width: auto;
+    display: inline-block;
+    @include doubly(20px);
+    text-align: center;
+  }
+}
+
+.grid__row,
+.theme__colors,
+.grid__col--12,
+.grid__col--12 [class^="btn--"]{
+  @include mq(medium) {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+  }
+}
+
+.grid__col--4 .btn--default.theme__colors{
+  width: 100%;
+  display: block;
+}
+
+
+.container.grid__row:last-of-type{
+  width: 70%;
+}
+
+.grid__col--7.theme__colors.centered{
+  @include mq(medium) {
+    flex-grow: 0.5;
+  }
+}

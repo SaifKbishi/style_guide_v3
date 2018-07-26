@@ -7,13 +7,12 @@
 .nav{
   display: flex;
   flex-direction: column;
-/*    @include mq(medium) {
-      justify-content: flex-end;
-      height: 200px;
-    }*/
+    @include mq(medium) {
+      flex-direction: column;
+    }
     @include mq(large) {
-         flex-direction: row;
-       }
+      flex-direction: row;
+    }
 }
 
 .grid__col--3{
@@ -23,15 +22,18 @@
      width: 140px;
    }
    @include mq(large) {
-        margin-right: auto;
-      }
+      margin-right: auto;
+    }
 }
-/*
+
 .grid__col--9{
   @include mq(medium) {
     width: 100%;
   }
-}*/
+  @include mq(large) {
+     width: auto;;
+   }
+}
 
 .nav a{
   display: block;
