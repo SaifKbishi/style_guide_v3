@@ -249,7 +249,7 @@ th {
   width: 90%; }
   [class*="grid__col--"] > .grid__row {
     width: 100%; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1441px) {
     .grid__row {
       max-width: 1440px; } }
 
@@ -293,8 +293,8 @@ th {
   .grid__col--12,
   .grid__col--12 [class^="btn--"] {
     display: flex;
-    flex-grow: 1;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap;
+    flex-grow: 1; } }
 
 .grid__col--4 .btn--default.theme__colors {
   width: 100%;
@@ -332,7 +332,7 @@ th {
     width: 91.5%; }
   .grid__col--12 {
     width: 100%; } }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .grid__col--1 {
     width: 6.5%; }
   .grid__col--2 {
@@ -512,7 +512,7 @@ th {
     [class^="grid__row"]:first-of-type,
     .nav {
       flex-direction: column; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1441px) {
     [class^="grid__row"]:first-of-type,
     .nav {
       flex-direction: row; } }
@@ -523,14 +523,14 @@ th {
   @media (min-width: 481px) {
     .grid__col--3 {
       width: 140px; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1441px) {
     .grid__col--3 {
       margin-right: auto; } }
 
 @media (min-width: 481px) {
   .grid__col--9 {
     width: 100%; } }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .grid__col--9 {
     width: auto; } }
 
@@ -550,9 +550,9 @@ li {
   margin-bottom: 1.875em; }
   @media (min-width: 481px) {
     .nav {
-      justify-content: space-between;
-      flex-direction: row; } }
-  @media (min-width: 1440px) {
+      flex-direction: row;
+      justify-content: space-between; } }
+  @media (min-width: 1441px) {
     .nav {
       justify-content: flex-end; } }
 

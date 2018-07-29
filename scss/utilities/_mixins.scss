@@ -17,12 +17,12 @@
 // Media queries
 @mixin mq($break) {
   @if $break == "large" {
-    @media (min-width: $brkpoint-lg){
+    @media (min-width: $brkpoint-lg + 1){
       @content;
     }
   }
   @else if $break == "medium" {
-    @media (min-width: $brkpoint-md + 1) {
+    @media (min-width: $brkpoint-md +1) {
       @content;
     }
   }
@@ -67,7 +67,14 @@
     @content;
 	}
 }
-
+//Flexbox mixin
+@mixin flex ($display: flex, $dir: null, $wrap: null, $just: null){
+    display: $display;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $just;
+    @content;
+}
 
 // Grid Columns
 @mixin g-columns {

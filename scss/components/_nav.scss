@@ -52,11 +52,13 @@ li {
 	margin-top: em(20px);
 	margin-bottom: em(30px);
   @include mq(medium) {
-    justify-content: space-between;
-    flex-direction: row;
+    @include flex(null, row, null, space-between );
+    //justify-content: space-between;
+    //flex-direction: row;*/
   }
   @include mq(large) {
-    justify-content: flex-end;
+    @include flex(null, null, null, flex-end );
+    //justify-content: flex-end;
   }
 }
 

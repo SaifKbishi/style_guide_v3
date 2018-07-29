@@ -40,9 +40,8 @@
 .grid__col--12,
 .grid__col--12 [class^="btn--"]{
   @include mq(medium) {
-    display: flex;
+    @include flex(flex, null, wrap, null );    
     flex-grow: 1;
-    flex-wrap: wrap;
   }
 }
 
